@@ -1,0 +1,4 @@
+The Aurora Mod is still WIP - and currently in Alpha, though it is stable - but will be ice-themed and/or a general mod.
+Currently there is an accessory, a few weapons (a "Bricks" system to make Heavy Weapons, more info on the Wiki) and a Mob Soul system (Based on the older version of Ersion, every hostile NPc drops a Soul you can use to make stuff) and several WIP items (They are labeleld and have sprites, but don't function yet)
+
+More info can be found on the Forum Thread and wiki (Wiki is linked to the thread too)

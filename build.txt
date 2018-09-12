@@ -1,0 +1,7 @@
+author = vizthex
+
+version = 0.3
+
+displayName = The Aurora Mod
+
+homepage = https://forums.terraria.org/index.php?threads/the-aurora-mod.61807/
