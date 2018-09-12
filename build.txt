@@ -1,7 +1,6 @@
 author = vizthex
 
-version = 0.3
-
+version = 0.1-A
 displayName = The Aurora Mod
 
-homepage = https://forums.terraria.org/index.php?threads/the-aurora-mod.61807/
+homepage = https://github.com/RadianceDevelopment/AuroraMod
