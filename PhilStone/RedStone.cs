@@ -72,8 +72,8 @@ namespace AuroraMod.PhilStone
 			recipe = new ModRecipe(mod);
 			recipe.AddIngredient(mod.GetItem("RedStone"), 5);
 			recipe.AddIngredient(mod.GetItem("MobSoul"), 4);
-			recipe.AddRecipeGroup("AuroraMod:GoldBar", 4);
-			//recipe.AddIngredient(ItemID.GoldBar, 4);
+			//recipe.AddRecipeGroup("AuroraMod:GoldBar", 4);
+			recipe.AddIngredient(ItemID.GoldBar, 4);
 			recipe.AddTile(TileID.Anvils);
 			//recipe.AddTile(TileID.AlchCircle);
 			recipe.SetResult(ItemID.Sextant);
