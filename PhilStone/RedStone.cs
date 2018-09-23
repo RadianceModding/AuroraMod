@@ -22,14 +22,14 @@ namespace AuroraMod.PhilStone
 			item.value = 0;
             item.rare = 2;
         }
-
+		
         public override void AddRecipes()
         {
-			// RECIPE
+			// CRAFTING RECIPE
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(mod.GetItem("MobSoul"), 100);
 			recipe.AddTile(TileID.WorkBenches);
-			//recipe.AddTile(TileID.SoulWelder);
+			//recipe.AddTile(TileID.PhilAlchCircle);
 			recipe.SetResult(this, 25);
 			recipe.AddRecipe();
 			
@@ -37,55 +37,69 @@ namespace AuroraMod.PhilStone
 			// USES BELOW
 			// Depth Meter
 			recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.GetItem("RedStone"), 1);
-			recipe.AddIngredient(mod.GetItem("MobSoul"), 1);
-			recipe.AddIngredient(ItemID.Chain, 1);
-			recipe.AddIngredient(ItemID.SilverCoin, 25);
-			recipe.AddIngredient(ItemID.SilverBar, 4);
+			recipe.AddIngredient(mod.GetItem("RedStone"), 5);
+			recipe.AddIngredient(mod.GetItem("MobSoul"), 4);
+			recipe.AddIngredient(ItemID.IronBar, 4);
+			recipe.AddIngredient(ItemID.Chain, 2);
+			recipe.anyIronBar = true;
 			recipe.AddTile(TileID.Anvils);
-			//recipe.AddTile(TileID.SoulWelder);
+			//recipe.AddTile(TileID.AlchCircle);
 			recipe.SetResult(ItemID.DepthMeter);
 			recipe.AddRecipe();
 			
 			// FISHERMAN'S POCKET GUIDE
 			recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.GetItem("RedStone"), 2);
+			recipe.AddIngredient(mod.GetItem("RedStone"), 5);
 			recipe.AddIngredient(mod.GetItem("MobSoul"), 4);
-			recipe.AddIngredient(ItemID.Silk, 1);
-			recipe.AddIngredient(ItemID.GoldCoin, 1);
-			recipe.AddIngredient(ItemID.SilverCoin, 4);
+			recipe.AddIngredient(ItemID.Silk, 8);
 			recipe.AddTile(TileID.Anvils);
-			//recipe.AddTile(TileID.SoulWelder);
+			//recipe.AddTile(TileID.AlchCircle);
 			recipe.SetResult(ItemID.FishermansGuide);
 			recipe.AddRecipe();
 			
 			// WEATHER RADIO
 			recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.GetItem("RedStone"), 2);
+			recipe.AddIngredient(mod.GetItem("RedStone"), 5);
 			recipe.AddIngredient(mod.GetItem("MobSoul"), 4);
-			recipe.AddIngredient(ItemID.IronBar, 4);
-			recipe.AddIngredient(ItemID.GoldCoin, 1);
-			recipe.AddIngredient(ItemID.SilverCoin, 4);
+			recipe.AddIngredient(ItemID.IronBar, 8);
+			recipe.anyIronBar = true;
 			recipe.AddTile(TileID.Anvils);
-			//recipe.AddTile(TileID.SoulWelder);
+			//recipe.AddTile(TileID.AlchCircle);
 			recipe.SetResult(ItemID.WeatherRadio);
 			recipe.AddRecipe();
 			
 			// SEXTANT
 			recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.GetItem("RedStone"), 2);
+			recipe.AddIngredient(mod.GetItem("RedStone"), 5);
 			recipe.AddIngredient(mod.GetItem("MobSoul"), 4);
-			recipe.AddIngredient(ItemID.GoldBar, 4);
-			recipe.AddIngredient(ItemID.GoldCoin, 1);
-			recipe.AddIngredient(ItemID.SilverCoin, 4);
+			recipe.AddRecipeGroup("AuroraMod:GoldBar", 4);
+			//recipe.AddIngredient(ItemID.GoldBar, 4);
 			recipe.AddTile(TileID.Anvils);
-			//recipe.AddTile(TileID.SoulWelder);
+			//recipe.AddTile(TileID.AlchCircle);
 			recipe.SetResult(ItemID.Sextant);
+			recipe.AddRecipe();
+			
+			// METAL DETECTOR
+		    recipe = new ModRecipe(mod);
+			recipe.AddIngredient(mod.GetItem("RedStone"), 10);
+			recipe.AddIngredient(mod.GetItem("MobSoulT2"), 4);
+			recipe.AddIngredient(ItemID.IronBar, 10);
+			recipe.anyIronBar = true;
+			recipe.AddTile(TileID.Anvils);
+			//recipe.AddTile(TileID.AlchCircle);
+			recipe.SetResult(ItemID.MetalDetector);
+			recipe.AddRecipe();
+			
+			// RADAR
+			recipe = new ModRecipe(mod);
+			recipe.AddIngredient(mod.GetItem("RedStone"), 10);
+			recipe.AddIngredient(mod.GetItem("MobSoulT2"), 4);
+			recipe.AddIngredient(ItemID.IronBar, 10);
+			recipe.anyIronBar = true;
+			recipe.AddTile(TileID.Anvils);
+			//recipe.AddTile(TileID.AlchCircle);
+			recipe.SetResult(ItemID.Radar);
 			recipe.AddRecipe();
         }
     }
 }
-// ORDER: Weak (Vanilla) - Mudane - Average - Above-Average - Strong - Augmented - Galactic - Cosmic
-// Temp until I can figure out how to make it not use the item each time (if possible)
-// RARITIES: Vanilla one is 4 (Light Red), this one is 5, total is: 4 (Vanilla) - 5 - 5 - 6 - 6 - 7 - 8 - 9
-// Red Stone (this one) is lowest though, for pre-HM
