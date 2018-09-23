@@ -1,5 +1,4 @@
-author = vizthex
-
+author = Radiace Development
 version = 0.1-A
 displayName = The Aurora Mod
 
