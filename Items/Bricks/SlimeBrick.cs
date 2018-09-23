@@ -8,8 +8,8 @@ namespace AuroraMod.Items.Bricks
     {
         public override void SetStaticDefaults()
         {
-			DisplayName.SetDefault("Slimey Brick");
-            Tooltip.SetDefault("The Third Tier of materials" + 
+			DisplayName.SetDefault("Slimy Brick");
+            Tooltip.SetDefault("The Third tier of brick" + 
 			"\nIt's oozing everywhere..." +
 			"\nYou think it can be used as glue");
         }
@@ -19,7 +19,7 @@ namespace AuroraMod.Items.Bricks
             item.width = 20;
             item.height = 20;
             item.maxStack = 999;
-			item.value = Item.sellPrice(0, 0, 0, 16);
+			item.value = Item.sellPrice(0, 0, 0, 4);
             item.rare = 0;
 
         }

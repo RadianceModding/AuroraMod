@@ -9,9 +9,9 @@ namespace AuroraMod.Items.Bricks
         public override void SetStaticDefaults()
         {
 			DisplayName.SetDefault("Dirt Brick");
-            Tooltip.SetDefault("The Worst [-1] brick of all!" + 
+            Tooltip.SetDefault("The Worst [-1 tier] brick of all!" + 
 			"\nit's really, REALLY dirty..." +
-			"\nit's more of a mound than a brick...");
+			"\nit's more of a mound than a brick...\nwhy would you make this?!");
         }
 
         public override void SetDefaults()

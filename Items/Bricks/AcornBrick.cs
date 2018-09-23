@@ -9,7 +9,7 @@ namespace AuroraMod.Items.Bricks
         public override void SetStaticDefaults()
         {
 			DisplayName.SetDefault("Acorn Brick");
-            Tooltip.SetDefault("The First Tier of materials" + 
+            Tooltip.SetDefault("The First tier of brick" + 
 			"\nYou've figured out how to compress acorns into a brick");
         }
 

@@ -9,7 +9,7 @@ namespace AuroraMod.Items.Bricks
         public override void SetStaticDefaults()
         {
 			DisplayName.SetDefault("Wood Brick");
-            Tooltip.SetDefault("The Second Tier of bricks" + 
+            Tooltip.SetDefault("The Second tier of brick" + 
 			"\nYou've figured out how to compress wood into more wood" + 
 			 "\nwait a minute...");
         }

@@ -9,7 +9,7 @@ namespace AuroraMod.Items.Bricks
         public override void SetStaticDefaults()
         {
 			DisplayName.SetDefault("Stone Brick");
-            Tooltip.SetDefault("The Fourth Tier of bricks" + 
+            Tooltip.SetDefault("The Fourth tier of brick" + 
 			"\nYou've figured out how to compress stone into a brick" + 
 			 "\nimpressive too, since all you had was a bench");
         }
