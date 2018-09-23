@@ -25,8 +25,8 @@ namespace AuroraMod.Items.Runic
         {
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(mod.GetItem("RuneInscriber"), 1);
-			recipe.AddIngredient(ItemID.Stone, 23);
-			recipe.AddTile(TileID.Anvil);
+			recipe.AddIngredient(ItemID.StoneBlock, 23);
+			recipe.AddTile(TileID.Anvils);
 			//recipe.AddTile(TileID.RunicInscriber);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

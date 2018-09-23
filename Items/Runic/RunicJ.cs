@@ -4,12 +4,12 @@ using Terraria.ModLoader;
 
 namespace AuroraMod.Items.Runic
 {
-    public class RunicC : ModItem
+    public class RunicJ : ModItem
     {
         public override void SetStaticDefaults()
         {
 			DisplayName.SetDefault("Runic Letter");
-            Tooltip.SetDefault("A rune written in stone that might be a letter.\nYou're not sure how you made it, you just knew how...\nPossibly translates to 'C'");
+            Tooltip.SetDefault("A rune written in stone that might be a letter.\nYou're not sure how you made it, you just knew how...\nPossibly translates to 'J'");
         }
 
         public override void SetDefaults()
@@ -25,7 +25,7 @@ namespace AuroraMod.Items.Runic
         {
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(mod.GetItem("RuneInscriber"), 1);
-			recipe.AddIngredient(ItemID.StoneBlock, 3);
+			recipe.AddIngredient(ItemID.StoneBlock, 10);
 			recipe.AddTile(TileID.Anvils);
 			//recipe.AddTile(TileID.RunicInscriber);
 			recipe.SetResult(this);
