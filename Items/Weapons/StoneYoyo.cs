@@ -24,7 +24,7 @@ namespace AuroraMod.Items.Weapons
 			item.width = 24;
 			item.height = 24;
 			item.useAnimation = 25;
-			item.useTime = 25;
+			item.useTime = 24;
 			item.shootSpeed = 16f;
 			item.knockBack = 2.5f;
 			item.damage = 12;
@@ -36,7 +36,6 @@ namespace AuroraMod.Items.Weapons
 			item.noUseGraphic = true;
 
 			item.UseSound = SoundID.Item1;
-			item.value = 0;
 			item.shoot = mod.ProjectileType<StoneYoyoProjectile>();
 		}
 

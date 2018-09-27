@@ -23,7 +23,7 @@ namespace AuroraMod.Items.Weapons
 			item.width = 24;
 			item.height = 24;
 			item.useAnimation = 25;
-			item.useTime = 25;
+			item.useTime = 20;
 			item.shootSpeed = 16f;
 			item.knockBack = 1.0f;
 			item.damage = 55;
