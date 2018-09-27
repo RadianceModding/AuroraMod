@@ -1,7 +1,7 @@
-using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Microsoft.Xna.Framework;
 
 namespace AuroraMod.Items.Tools
 {
@@ -33,7 +33,8 @@ namespace AuroraMod.Items.Tools
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.GetItem("BossSoul"), 4);
+			recipe.AddIngredient(mod.GetItem("BossSoul"), 16);
+			recipe.AddIngredient(mod.GetItem("PhilStone"), 25);
 			recipe.AddTile(TileID.WorkBenches);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
