@@ -18,15 +18,15 @@ namespace AuroraMod.Items.Runic
             item.height = 20;
             item.maxStack = 999;
             item.scale = 1.0F;
-			item.rare = 0;
+			item.rare = 1;
         }
 
         public override void AddRecipes()
         {
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Wood, 25);
+			recipe.AddIngredient(mod.GetItem("BossSoul"), 25);
+			recipe.AddIngredient(ItemID.Wood, 50);
 			recipe.anyWood = true;
-			recipe.AddIngredient(ItemID.StoneBlock, 10);
 			recipe.AddTile(TileID.WorkBenches);
 			recipe.SetResult(this, 50);
 			recipe.AddRecipe();
