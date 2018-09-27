@@ -9,7 +9,7 @@ namespace AuroraMod.Items
         public override void SetStaticDefaults()
         {
 			DisplayName.SetDefault("Empowered Luminite");
-            Tooltip.SetDefault("This was a terrible idea.");
+            Tooltip.SetDefault("This was a terrible idea.\nWill most definitly backfire.");
         }
 
         public override void SetDefaults()
@@ -27,18 +27,18 @@ namespace AuroraMod.Items
 
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemID.LunarBar, 4);
-			recipe.AddIngredient(ItemID.FragmentSolar, 4);
-			recipe.AddIngredient(ItemID.FragmentVortex, 4);
-			recipe.AddIngredient(ItemID.FragmentNebula, 4);
-			recipe.AddIngredient(ItemID.FragmentStardust, 4);
 			recipe.AddIngredient(ItemID.SoulofFlight, 4);
 			recipe.AddIngredient(ItemID.SoulofLight, 4);
 			recipe.AddIngredient(ItemID.SoulofNight, 4);
 			recipe.AddIngredient(ItemID.SoulofSight, 4);
 			recipe.AddIngredient(ItemID.SoulofMight, 4);
 			recipe.AddIngredient(ItemID.SoulofFright, 4);
+			recipe.AddIngredient(ItemID.FragmentSolar, 4);
+			recipe.AddIngredient(ItemID.FragmentVortex, 4);
+			recipe.AddIngredient(ItemID.FragmentNebula, 4);
+			recipe.AddIngredient(ItemID.FragmentStardust, 4);
 			recipe.AddTile(TileID.LunarCraftingStation);
-			recipe.SetResult(this);
+			recipe.SetResult(this, 8);
 			recipe.AddRecipe();
         }
     }

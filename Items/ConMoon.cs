@@ -17,8 +17,8 @@ namespace AuroraMod.Items
             item.width = 20;
             item.height = 20;
             item.maxStack = 999;
-		    item.value = Item.sellPrice(0, 1, 0, 0);
-            item.rare = 10;
+		    item.value = Item.sellPrice(0, 0, 50, 0);
+            item.rare = 3;
 
         }
 
@@ -26,8 +26,8 @@ namespace AuroraMod.Items
         {
 
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.FallenStar, 16);
-			recipe.AddTile(TileID.LunarCraftingStation);
+			recipe.AddIngredient(ItemID.FallenStar, 10);
+			recipe.AddTile(TileID.Workbenches);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
         }
