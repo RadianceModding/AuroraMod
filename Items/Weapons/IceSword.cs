@@ -33,7 +33,6 @@ namespace AuroraMod.Items.Weapons
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemID.IceBlade, 1);
-			recipe.AddIngredient(ItemID.IceBlock, 20); //Will be 25 when shard is a drop
 			recipe.AddIngredient(mod.GetItem("IceShard"), 4);
 			recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this);
