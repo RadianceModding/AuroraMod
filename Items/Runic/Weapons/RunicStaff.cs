@@ -4,19 +4,19 @@ using Terraria.ModLoader;
 
 namespace AuroraMod.Items.Runic.Weapons
 {
-	public class RunicSword : ModItem
+	public class RunicStaff : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Runic Sword");
-			Tooltip.SetDefault("A sword of great power, first forged by the most wise blacksmith");
+			DisplayName.SetDefault("Runic Staff");
+			Tooltip.SetDefault("A staff of great power, forged from the most ancient of magic");
 		}
 		public override void SetDefaults()
 		{
-			item.damage = 50;
-			item.crit = 10;
+			item.damage = 30;
+			item.crit = 12;
 			item.knockBack = 3;
-			item.melee = true;
+			item.magic = true;
 			item.width = 40;
 			item.height = 60;
 			item.useTime = 15;
@@ -39,10 +39,10 @@ namespace AuroraMod.Items.Runic.Weapons
 			recipe.AddIngredient(mod.GetItem("RunicC"), 1);
 			recipe.AddIngredient(mod.GetItem("RuneInscriber"), 1);
 			recipe.AddIngredient(mod.GetItem("RunicS"), 1);
-			recipe.AddIngredient(mod.GetItem("RunicW"), 1);
-			recipe.AddIngredient(mod.GetItem("RunicO"), 1);
-	        recipe.AddIngredient(mod.GetItem("RunicR"), 1);
-			recipe.AddIngredient(mod.GetItem("RunicD"), 1);
+			recipe.AddIngredient(mod.GetItem("RunicT"), 1);
+			recipe.AddIngredient(mod.GetItem("RunicA"), 1);
+	        recipe.AddIngredient(mod.GetItem("RunicF"), 1);
+			recipe.AddIngredient(mod.GetItem("RunicF"), 1);
 			recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

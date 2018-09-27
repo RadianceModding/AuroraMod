@@ -8,7 +8,7 @@ namespace AuroraMod.Items.Runic
     {
         public override void SetStaticDefaults()
         {
-			DisplayName.SetDefault("Runic Letter");
+			DisplayName.SetDefault("Runic Letter P");
             Tooltip.SetDefault("A rune written in stone that might be a letter.\nYou're not sure how you made it, you just knew how...\nPossibly translates to 'P'");
         }
 
