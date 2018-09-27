@@ -10,7 +10,7 @@ namespace AuroraMod.Items.Tools
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Soul Harvester");
-			Tooltip.SetDefault("This is a modded pickaxe.");
+			Tooltip.SetDefault("A pickaxe able to harvest the very soul.");
 		}
 
 		public override void SetDefaults()
