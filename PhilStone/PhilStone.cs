@@ -27,7 +27,7 @@ namespace AuroraMod.PhilStone
 
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(mod.GetItem("MobSoul"), 250);
-			recipe.AddIngredient(mod.GetItem("RedStone"), 25);
+			recipe.AddIngredient(mod.GetItem("RedStone"), 50);
 			recipe.AddTile(TileID.Anvils);
 			//recipe.AddTile(TileID.PhilAlchCircle);
 			recipe.SetResult(this, 100);
