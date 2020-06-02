@@ -1,5 +1,5 @@
 author = Radiance Development
-version = 0.1
+version = A1.0
 displayName = The Aurora Mod
 
 homepage = https://github.com/RadianceDevelopment/AuroraMod
