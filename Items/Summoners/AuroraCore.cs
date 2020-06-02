@@ -16,7 +16,7 @@ namespace AuroraMod.Items.Summoners
         {
             item.width = 20;
             item.height = 20;
-            item.maxStack = 999;
+            item.maxStack = 20;
 		    item.value = Item.sellPrice(0, 0, 75, 0);
             item.rare = 10;
 

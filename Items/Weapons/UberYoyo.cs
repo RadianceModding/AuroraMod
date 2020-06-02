@@ -1,7 +1,8 @@
-using AuroraMod.Projectiles;
+/*
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using AuroraMod.Projectiles;
 
 namespace AuroraMod.Items.Weapons
 {
@@ -72,3 +73,7 @@ namespace AuroraMod.Items.Weapons
 		}
 	}
 }
+
+DISABLED - I can't get the projectile to work for the life of me. Sorry.
+
+*/
