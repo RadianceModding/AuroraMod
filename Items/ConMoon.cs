@@ -27,7 +27,7 @@ namespace AuroraMod.Items
 
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemID.FallenStar, 10);
-			recipe.AddTile(TileID.Workbenches);
+			recipe.AddTile(TileID.WorkBenches);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
         }
